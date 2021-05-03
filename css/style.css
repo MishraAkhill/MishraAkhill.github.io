@@ -37,16 +37,30 @@ font-family: 'Open Sans', sans-serif;
 ==================================================*/
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', S;
     font-size: 80px;
     line-height: 70px;
     color: #425BB5;
 }
 
 #page-title {
+    color: #919191;
+}
+#page-know {
+    color: #0381b6;
+}
+#page-Society {
+    color: #6a5606;
+}
+#page-Education {
     color: #000000;
 }
-
+#page-work {
+    color: #844702;
+}
+#page-contact {
+    color: #000000;
+}
 h4 {
     font-family: 'Lato', sans-serif;
     text-transform: capitalize;
@@ -57,7 +71,7 @@ h4 {
 }
 
 #page-subtitle {
-    color: #ffffff;
+    color: ;
 }
 
 h4:before {
@@ -290,7 +304,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/IMG_1583_Original.jpg);
+    background: url(../img/pacho_dehi.jpeg);
     background-size: cover;
     background-position: center center;
     height: 100vh; 
@@ -298,7 +312,7 @@ a.active {
 
 @media screen and (max-width: 450px) {
     #home {
-        background: url(../img/phone1.jpg);
+        background: url(../img/phone2.jpeg);
         background-size: cover;
         background-position: center center;
         height: 100vh; 
@@ -658,7 +672,7 @@ a.active {
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
+    background: #858585
 }
 
 #contact-form input,
@@ -749,7 +763,7 @@ fieldset {
 }
 
 #submit {
-    background-color: #425BB5;
+    background-color: #0aeb34;
     color: #fff;
     padding: 10px 40px;
     border-radius: 0;
