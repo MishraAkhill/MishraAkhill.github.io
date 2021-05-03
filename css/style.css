@@ -59,7 +59,7 @@ h1 {
     color: #844702;
 }
 #page-contact {
-    color: #c1baba;
+    color: #000000;
 }
 h4 {
     font-family: 'Lato', sans-serif;
@@ -672,7 +672,7 @@ a.active {
 
 #contact {
     padding: 100px 0;
-    background: #858585
+    background: #c1baba;
 }
 
 #contact-form input,
@@ -763,7 +763,7 @@ fieldset {
 }
 
 #submit {
-    background-color: #2191e7;
+    background-color: #205279;
     color: #fff;
     padding: 10px 40px;
     border-radius: 0;
