@@ -312,7 +312,7 @@ a.active {
 
 @media screen and (max-width: 450px) {
     #home {
-        background: url(../img/phone2.jpeg);
+        background: url(../img/grand2.jpg);
         background-size: cover;
         background-position: center center;
         height: 100vh; 
