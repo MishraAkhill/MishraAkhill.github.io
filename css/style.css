@@ -245,26 +245,29 @@ body {
 
 /* Header
 ==================================================*/
-
 header {
     text-align: center;
-    -webkit-transition: all .5s;
     transition: all .5s;
-    height: 65px;
+    /* Removed fixed height to allow dynamic resizing */
 }
 
+/* Styling for the navbar brand (logo or title) */
+.navbar-brand {
+    color: #444;
+    font-weight: bold;
+    /* Additional styling if needed */
+}
+
+/* Ensuring list elements are styled correctly */
 nav ul {
-    display: inline-block;
     padding-left: 0;
     list-style: none;
-    padding: 20px;
     margin-bottom: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
-    display: inline-block;
     margin: 10px;
 }
 
@@ -276,29 +279,88 @@ nav li a {
     font-weight: bold;
 }
 
-.bg-nav {
-    background: #fff;
-    border-bottom: 1px solid #f3f3f3
-}
-
-.bg-nav ul {
-    padding: 10px;
-}
-
-a:focus {
-    color: #444;
-    text-decoration: none;
-}
-
-a:hover {
+nav li a:hover, 
+nav li a.active {
     color: #425BB5;
     text-decoration: none;
 }
 
-a.active {
-    color: #425BB5;
+/* Styling for the toggler icon when it's shown */
+.navbar-toggler {
+    border: none;
+    padding: 0;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 128, 128, 0.7)' stroke-width='3' linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Style adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+      position: relative;
+    }
+    
+    .navbar-toggler {
+        position: absolute;
+        right: 10px; /* Adjust the right spacing as needed */
+        top: 10px; /* Adjust the top spacing to align with the brand */
+    }
+
+    /* Make sure the collapsed menu items align to the right */
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the menu items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar-brand {
+        position: absolute;
+        left: 10px; /* Increase the left spacing to move the brand to the left */
+        top: 10px; /* Adjust the top spacing to align with the toggler */
+        transform: translateY(-50%);
+        margin-left: 0; /* Reset any left margin if previously set */
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none; /* Hide the toggler */
+    }
+
+    .navbar-brand{
+        display: none;
+    }
+    /* Other styles for desktop view */
+}
+
+.hamburger-icon {
+    width: 25px; /* Width of the hamburger icon */
+    height: 25px; /* Height of the hamburger icon */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent; /* Ensure the background is transparent */
+  }
+  
+  .hamburger-icon::before,
+  .hamburger-icon::after,
+  .hamburger-icon div {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4); /* Make bars slightly transparent */
+    height: 4px; /* Height of the bars */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .hamburger-icon div {
+    width: 100%; /* Full width of the parent */
+    background-color: rgba(0, 0, 0, 0.4); /* Make middle bar slightly transparent */
+  }
+  
 
 /* home section
 ==================================================*/
@@ -839,3 +901,82 @@ fieldset {
         font-size: 10px;
     }
 }
+
+
+#blogs {
+    padding: 50px 0;
+    background-color: #f4f4f4; /* Example background color */
+}
+
+#blogs h1.size-50 {
+    font-size: 36px;
+    color: #425BB5;
+    margin-bottom: 20px;
+}
+
+#blogs .blog-post {
+    margin-bottom: 30px;
+    /* Additional styling for blog posts */
+}
+
+/* Responsive styling for blogs */
+@media (max-width: 768px) {
+    #blogs .blog-post {
+        /* Adjustments for mobile view */
+    }
+}
+
+.blog-post-placeholder {
+    margin-bottom: 30px; /* Space between placeholders */
+    text-align: center; /* Center the content */
+}
+
+.blog-post-placeholder img {
+    width: 100%; /* Make image responsive */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.blog-post-placeholder h3 {
+    color: #333; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.blog-post-placeholder p {
+    color: #666; /* Text color */
+}
+
+
+
+/* Wheels and Wanderlust Section */
+#wanderlust {
+    padding-top: 100px; /* Adjust this value as needed to prevent overlap with the header */
+    background-color: #f4f4f4; /* Example background color */
+    color: #333; /* Text color */
+}
+
+#wanderlust h1.size-50 {
+    font-size: 36px; /* Heading font size */
+    color: #425BB5; /* Heading color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+#wanderlust p {
+    font-size: 16px; /* Paragraph font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+/* Responsive design for Wanderlust section */
+@media (max-width: 768px) {
+    #wanderlust {
+        padding-top: 70px;
+    }
+    #wanderlust h1.size-50 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+    #wanderlust p {
+        font-size: 14px; /* Smaller paragraph font size for mobile */
+    }
+}
+
+
