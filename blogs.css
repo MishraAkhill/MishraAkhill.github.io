@@ -1,0 +1,57 @@
+
+#blogs {
+    padding: 0px 0;
+    height: max-content;
+    background-color: #f4f4f4; /* Example background color */
+}
+
+#blogs h1.size-50 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#blogs .blog-post {
+    margin-bottom: 10px;
+    /* Additional styling for blog posts */
+}
+
+/* Responsive styling for blogs */
+@media (max-width: 768px) {
+}
+
+.blog-post-placeholder {
+    margin-bottom: 30px; /* Space between placeholders */
+    text-align: center; /* Center the content */
+}
+
+.blog-post-placeholder img {
+    width: 100%; /* Make image responsive */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.blog-post-placeholder h3 {
+    color: #333; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.blog-post-placeholder p {
+    color: #666; /* Text color */
+}
+
+
+.read-more-btn {
+    background-color: #425bb5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}

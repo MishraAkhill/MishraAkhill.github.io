@@ -1,0 +1,57 @@
+
+@media screen and (min-width: 450px) {
+#home {
+    background: url(../img/pacho_dehi.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; 
+}
+
+@media screen and (max-width: 450px) {
+    #home {
+        background: url(../img/grand2.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 100vh; 
+    }
+  }
+ 
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.disply-table {
+    display: table;
+    height: 100vh;
+}
+
+
+/* about section
+==================================================*/
+
+#about {
+    padding: 100px 0;
+}
+
+.about-img-div img {
+    margin: 0 auto;
+}
+
+.about-border {
+    position: absolute;
+    border: 10px solid #e54e4e;
+    width: 400px;
+    height: 400px;
+    top: 40px;
+    left: 50px;
+    z-index: 1
+}
+
+/* adiraj */
+#adiraj {
+    padding: 100px 0;
+    background: #fff
+}
+}

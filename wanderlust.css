@@ -1,0 +1,33 @@
+
+
+/* Wheels and Wanderlust Section */
+#wanderlust {
+    padding-top: 10px; /* Adjust this value as needed to prevent overlap with the header */
+    background-color: #f4f4f4; /* Example background color */
+    color: #333; /* Text color */
+}
+
+#wanderlust h1.size-50 {
+    font-size: 36px; /* Heading font size */
+    color: #425BB5; /* Heading color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+#wanderlust p {
+    font-size: 16px; /* Paragraph font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+/* Responsive design for Wanderlust section */
+@media (max-width: 768px) {
+    #wanderlust {
+        padding-top: 70px;
+    }
+    #wanderlust h1.size-50 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+    #wanderlust p {
+        font-size: 14px; /* Smaller paragraph font size for mobile */
+    }
+}
